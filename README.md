@@ -1,28 +1,77 @@
 # json-server-base
 
-Esse é o repositório com a base de JSON-Server + JSON-Server-Auth já configurada, feita para ser usada no desenvolvimento das API's nos Capstones do Q2.
+Esse é o repositório com a base de JSON-Server + JSON-Server-Auth.
 
 ## Base
 
-Base: https://git.heroku.com/json-server-base-fabiojcp.git
+https://server-test-fabiojcp.herokuapp.com
 
 ## Endpoints
 
+# Register 
 
+/register
 
-### Cadastro
+method: POST
 
-POST /register <br/>
-POST /signup <br/>
-POST /users
+JSON:
+{
+    email: "email"
+    password: "password"
+}
 
-Qualquer um desses 3 endpoints irá cadastrar o usuário na lista de "Users", sendo que os campos obrigatórios são os de email e password.
-Você pode ficar a vontade para adicionar qualquer outra propriedade no corpo do cadastro dos usuários.
+Return:
 
+200 CREATED
 
-### Login
+{
+	"accessToken": "token",
+	"user": {
+		"email": "email",
+		"id": "userID
+	}
+}
 
-POST /login <br/>
-POST /signin
+# Login
 
-Qualquer um desses 2 endpoints pode ser usado para realizar login com um dos usuários cadastrados na lista de "Users"
+/login
+
+method: POST
+
+JSON:
+
+{
+    name: "name"
+    password: "password"
+}
+
+Return:
+
+200 OK
+
+{
+	"accessToken": "token",
+	"user": {
+		"email": "email",
+		"id": "userID"
+	}
+}
+
+# User
+
+/600/users/:userID
+
+method: GET
+
+Header:
+
+Authorization: Bearer "token"
+
+Return:
+200 ok
+
+{
+	"email": "email",
+	"password": "crypto password,
+	"id": "userID"
+}
