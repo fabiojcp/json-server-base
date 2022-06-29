@@ -2,9 +2,13 @@
 
 Esse é o repositório com a base de JSON-Server + JSON-Server-Auth já configurada, feita para ser usada no desenvolvimento das API's nos Capstones do Q2.
 
-## Endpoints
+## Base
 
 Base: https://git.heroku.com/json-server-base-fabiojcp.git
+
+## Endpoints
+
+
 
 ### Cadastro
 
