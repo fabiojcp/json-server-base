@@ -1,10 +1,8 @@
 {
   "users": [
     {
-      "email": "kenzinho@mail.com",
-      "password": "$2a$10$YQiiz0ANVwIgpOjYXPxc0O9H2XeX3m8OoY1xk7OGgxTnOJnsZU7FO",
-      "name": "Kenzinho",
-      "age": 38,
+      "email": "fabio@gmail.com",
+      "password": "$2a$10$ybHevL1aR2X/.2vfYNwOK.UOWcUG386/SKCKSrDS4lPpVXancG6KK",
       "id": 1
     }
   ]
